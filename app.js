@@ -112,7 +112,7 @@ function submit() {
     let selectedval = sltwo.options[sltwo.selectedIndex].value
     if(selectedval == '1'){
         donee.push(user);
-        restart(donee)
+        reload(tasks,donee)
         localStorage.donee = JSON.stringify(donee)
     }else if(selectedval == '2'){
         tasks.push(user)
